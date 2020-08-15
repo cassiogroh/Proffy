@@ -1,7 +1,7 @@
 ## App made with React and Typescript to connect students and teachers
 <br/>
 
-* You can check it out [here]() <br/>
+* You can check it out [here](https://cassiogroh.github.io/Proffy_web/) <br/>
 
 * Made during Next Level Week #2 from [Rockseat](https://rocketseat.com.br/); <br/>
 
