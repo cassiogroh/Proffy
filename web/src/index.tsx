@@ -9,3 +9,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// NLW original
+// git version: 30d8b2a

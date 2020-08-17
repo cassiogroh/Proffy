@@ -35,11 +35,11 @@ body {
   background: var(--color-background);
 }
 
-#root {
+/* #root {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 body,
 input,
@@ -49,10 +49,10 @@ textarea {
   color: var(--color-text-base);
 }
 
-.container {
+/* .container {
   width: 90vw;
   max-width: 700px;
-}
+} */
 
 @media (min-width: 700px) {
   :root {

@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
+import rocketIcon from '../../assets/images/icons/rocket.svg';
 
 import './styles.css'
 
 interface PageHeaderProps {
     title: string;
-    description?: string; // ? Torna uma prop opcional, algumas páginas não terão description
+    description?: string;
+    description2?: string;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ( {title, description, children} ) => {
+const PageHeader: React.FC<PageHeaderProps> = ( {title, description, description2, children} ) => {
     return (
         <header className="page-header">
             <div className="top-bar-container">
@@ -24,7 +26,14 @@ const PageHeader: React.FC<PageHeaderProps> = ( {title, description, children} )
 
             <div className="header-content">
                 <strong>{title}</strong>
-                { description && <p>{description}</p>}
+                
+                <div className="description">
+                    { description && <p>{description}</p>}
+                    <div className="description2">
+                        <img src={rocketIcon} alt="Foguete"/>
+                        { description2 && <p>{description2}</p>}
+                    </div>
+                </div>
 
                 {children}
             </div>

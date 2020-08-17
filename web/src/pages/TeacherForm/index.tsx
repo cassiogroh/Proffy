@@ -66,10 +66,13 @@ const TeacherForm = () => {
 
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader
-        title='Que incrível que você quer dar aulas! =)'
-        description='O primeiro passo, é preencher este formulário de inscrição'
-      />
+      <div className="form-header">
+        <PageHeader
+          title='Que incrível que você quer dar aulas!'
+          description='O primeiro passo, é preencher este formulário de inscrição'
+          description2='Prepare-se, vai ser o máximo!'
+        />
+      </div>
 
       <main>
         <form onSubmit={handleCreateClass}>

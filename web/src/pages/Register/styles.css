@@ -1,0 +1,20 @@
+#page-register {
+  display: flex;
+  height: 100vh;
+}
+
+.register-form {
+  width: 40vw;
+  background: radial-gradient(var(--color-background), #E0E0E7);
+}
+
+.logo-container-register {
+  width: 60vw;
+  padding: 10rem;
+  background: url(../../assets/images/logo.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 1.6rem;
+  font-weight: 500;
+  font-size: 2rem;
+}

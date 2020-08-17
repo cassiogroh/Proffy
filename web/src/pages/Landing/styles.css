@@ -1,41 +1,112 @@
-#page-landing {
-    width: 100vw;
-    height: 100vh;
+#root {
+    width: fit-content;
+    margin-top: -10px;
+}
+
+#page-landing .page-top {
+    /* width: 100vw; */
+    height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-text-in-primary);
     background: var(--color-primary);
+    overflow: hidden;
 }
 
-.hero-image {
-    width: 100%;
+#page-landing .page-top .page-middle {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo-container {
-    text-align: center;
-    margin-bottom: 3.2rem;
+#page-landing .page-top .top-header {
+    margin-top: -5rem;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
 }
 
-.logo-container img {
-    height: 10rem;
-}
-
-.logo-container h2 {
-    font-weight: 500;
+#page-landing .page-top .top-header .user-data {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-text-in-primary);
     font-size: 2.4rem;
-    line-height: 4.6rem;
+    transition: filter .2s;
+}
+
+#page-landing .page-top .top-header .user-data:hover {
+    filter: brightness(110%);
+}
+
+#page-landing .page-top .top-header .user-data img {
+    margin-right: 5px;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#page-landing .page-top .top-header .logout {
+    cursor: pointer;
+    background: var(--color-primary-dark);
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    transition: background .2s;
+}
+
+#page-landing .page-top .top-header .logout:hover {
+    background: var(--color-primary-darker);
+}
+
+.page-top .hero-image {
+    width: 50%;
+    max-width: 350px;
+}
+
+.page-top .logo-container {
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.page-top .logo-container img {
+    height: 7rem;
+    margin-top: 1.6rem
+}
+
+.page-top .logo-container h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    /* line-height: 4.6rem; */
     margin-top: 0.8rem;
 }
 
-.buttons-container {
+.page-bottom {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 3.2rem 0;
+    align-items: center;
 }
 
-.buttons-container a {
-    width: 30rem;
+.page-bottom-text p:first-child {
+    margin-top: 1.6rem;
+}
+
+.page-bottom-text p + p {
+    font-weight: bold;
+}
+
+.page-bottom .buttons-container {
+    display: flex; 
+    justify-content: center;
+    margin: 0.8rem 0;
+}
+
+.page-bottom .buttons-container a {
+    width: 40vw;
     height: 10.4rem;
     border-radius: 0.8rem;
     font: 700 2.0rem Archivo;
@@ -50,59 +121,69 @@
     transition: background-color 0.2s;
 }
 
-.buttons-container a:first-child {
+.page-bottom .buttons-container a:first-child {
     margin-right: 1.6rem;
 }
 
-.buttons-container a img {
+.page-bottom .buttons-container a img {
     width: 4rem;
     margin-right: 2.4rem;
 }
 
-.buttons-container a.study {
+.page-bottom .buttons-container a.study {
     background: var(--color-primary-lighter);
 }
 
-.buttons-container a.give-classes {
+.page-bottom .buttons-container a.give-classes {
     background: var(--color-secondary);
 }
 
-.buttons-container a.study:hover {
+.page-bottom .buttons-container a.study:hover {
     background: var(--color-primary-light);
 }
 
-.buttons-container a.give-classes:hover {
+.page-bottom .buttons-container a.give-classes:hover {
     background: var(--color-secondary-dark);
 }
 
-.total-connections {
+.page-bottom .total-connections {
     font-size: 1.4rem;
-
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.total-connections img {
+.page-bottom .text .total-connections p + p {
+    margin-bottom: 1.6rem;
+}
+
+.page-bottom .text .total-connections img {
     margin-left: 0.8rem;
 }
 
 /* Adaptação para desktop (telas maiores) */
 
 @media (min-width: 1100px) {
-    #page-landing-content {
+    #page-landing {
         max-width: 1100px;
 
-        display: grid;
+        /* display: grid;
         grid-template-rows: 350px 1fr;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
         'logo hero hero'
-        'buttons buttons total'
+        'buttons buttons total' */
         ;
     }
 
-    .logo-container {
+    #page-landing .page-top {
+        width: 100vw;
+    }
+
+    #page-landing .page-top .top-header {
+        max-width: 1000px;
+    }
+
+    /* .logo-container {
         grid-area: logo;
         align-self: center;
         margin: 0;
@@ -113,27 +194,57 @@
         text-align: initial;
         font-size: 3.6rem;
     }
+    */
 
-    .logo-container img {
-        height: 100%;
+    #page-landing .page-top .page-middle {
+        max-width: 1000px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8rem;
     }
 
-    .hero-image {
-        grid-area: hero;
-        justify-self: end;
+    .page-top .page-middle .logo-container img {
+        height: 50%;
+    } 
+
+    .page-top .page-middle .hero-image {
+        /* grid-area: hero;
+        justify-self: end; */
+        width: 50%;
+        max-width: 400px;
     }
 
-    .buttons-container {
-        grid-area: buttons;
-        justify-content: flex-start;
+    .page-bottom {
+        width: 100vw;
+        height: 30vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
-    .buttons-container a {
+    .page-bottom p:first-child {
+        margin-top: 0;
+    }
+
+    .page-bottom .buttons-container {
+        margin-right: 10rem;
+        margin-left: 10rem;
+        /* grid-area: buttons;
+        justify-content: flex-start; */
+    }
+
+    .page-bottom .buttons-container a {
+        width: 30rem;
         font-size: 2.4rem;
     }
 
-    .total-connections {
+    .page-bottom .total-connections {
+        flex-direction: column;
+    }
+
+    /* .page-bottom .total-connections p {
         grid-area: total;
         justify-self: end;
-    }
+    } */
 }
