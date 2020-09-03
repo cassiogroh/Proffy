@@ -1,8 +1,8 @@
 ## Backend for my [Proffy](https://cassiogroh.github.io/Proffy_web/) app
 
-* Made during Next Level Week #2 from [Rockseat](https://rocketseat.com.br/); <br/>
+* Made during Next Level Week #2 by [Rockseat](https://rocketseat.com.br/); <br/>
 
-* Built in Node.js; <br/>
+* Built in NodeJS; <br/>
 
 * Currently running on [Heroku](https://www.heroku.com/home)
 

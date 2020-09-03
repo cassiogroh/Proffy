@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-const PORT : string|number = process.env.PORT || 3000;
+const PORT : string | number = process.env.PORT || 3333;
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
