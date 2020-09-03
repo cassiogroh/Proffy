@@ -3,13 +3,13 @@
 
 * You can check it out [here](https://cassiogroh.github.io/Proffy_web/) <br/>
 
-* Made during Next Level Week #2 from [Rockseat](https://rocketseat.com.br/); <br/>
+* Made during Next Level Week #2 by [Rockseat](https://rocketseat.com.br/); <br/>
 
 ### Home page
 ![Proffy home page](./public/webView/home.PNG)
 
 * Mobile version also available [here](https://github.com/cassiogroh/Proffy_mobile); <br/>
 
-* Backend built on Node.js and running at [Heroku](https://www.heroku.com/home) <br/>
+* Backend built on NodeJS and running on [Heroku](https://www.heroku.com/home) <br/>
 
-**Clone this repo and run `npm start` to check its features closely.**
+**Clone this repo and run `npm install / start` to check its features closely.**
