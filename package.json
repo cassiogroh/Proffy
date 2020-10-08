@@ -7,7 +7,7 @@
     "postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
     "build:web": "cd ./packages/web && yarn run react-scripts build",
     "build": "cd ./packages/server && yarn build",
-    "start": "cd ./packages/server && yarn run node dist/src/server.js"
+    "start": "cd ./packages/server && yarn start"
 },
   "workspaces": {
     "packages": [
