@@ -8,7 +8,7 @@ import landingImg from '../../assets/images/landing.svg';
 import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
-import loginIcon from '../../assets/images/icons/login.svg';
+// import loginIcon from '../../assets/images/icons/login.svg';
 // import logoutIcon from '../../assets/images/icons/logout.svg';
 
 import './styles.css';
