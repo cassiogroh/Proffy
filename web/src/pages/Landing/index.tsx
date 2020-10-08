@@ -30,17 +30,17 @@ const Landing = () => {
       <div id="page-landing-content" className='container'>
         <div className="page-top">
 
-          <div className="top-header">
+          {/* <div className="top-header">
             <Link to='/register' className='user-data'>
               <p>Registrar</p>
-              {/* <img src="http://avatars.githubusercontent.com/cassiogroh" alt=""/>
-              <p>Cassio Groh</p> */}
+              <img src="http://avatars.githubusercontent.com/cassiogroh" alt=""/>
+              <p>Cassio Groh</p>
             </Link>
 
             <Link to='/login'>
               <img className='logout' src={loginIcon} alt="Sair"/> 
             </Link>
-          </div>
+          </div> */}
 
           <div className="page-middle">
             <div className="logo-container">
