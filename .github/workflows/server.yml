@@ -43,6 +43,10 @@ jobs:
       - name: Run build
         run: cd ./packages/server && yarn build
 
+      # Executar migrations do banco de dados
+      - name: Run migrations
+        run: cd ./packages/server && knex:migrate
+
       # Start no servidor
       - name: Run start
         run: cd ./packages/server && yarn start
