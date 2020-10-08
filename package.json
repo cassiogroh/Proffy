@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
-    "build:web": "--prefix ./packages.web react-scripts build"
+    "build:web": "--prefix ./packages/web react-scripts build"
 },
   "workspaces": {
     "packages": [
