@@ -1,0 +1,21 @@
+{
+  "name": "proffy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
+    "build:web": "cd ./packages/web && react-scripts build"
+},
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": "https://github.com/cassiogroh/Proffy.git",
+  "author": "cassiogroh <cassio_groh@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
